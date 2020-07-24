@@ -19,7 +19,19 @@ public class Lab2 {
         }
     }
 
+    public static void Task3() {
+        Scanner kb = new Scanner(System.in);
+        // Get a word from the user
+        System.out.print("Please Enter a word: ");
+        String str = kb.nextLine();
+
+        for (int i = 0; i < str.length(); i++) {
+            int codeForCh = str.codePointAt(i);
+            System.out.println(str.charAt(i) + " : " + codeForCh);
+        }
+    }
+
     public static void main(String[] args) {
-        Task2();
+        Task3();
     }
 }
