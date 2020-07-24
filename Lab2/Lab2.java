@@ -44,6 +44,43 @@ public class Lab2 {
         }
     }
 
+    public static void Task5() {
+        String defaultStaring = "==THE END==";
+        Scanner kb = new Scanner(System.in);
+
+        System.out.print("Please enter something: ");
+        String strFromUser = kb.nextLine();
+
+        System.out.println(strFromUser);
+        String result = strFromUser.concat(defaultStaring);
+        System.out.println(result);
+        System.out.println(strFromUser);
+
+    }
+
+    public static void Task6() {
+        String defaultStaring = "==THE END==";
+        Scanner kb = new Scanner(System.in);
+
+        System.out.print("Please enter something: ");
+        String strFromUser = kb.nextLine();
+
+        System.out.println(strFromUser);
+        String result = strFromUser.concat(defaultStaring);
+        System.out.println(result);
+        System.out.println(strFromUser);
+
+    }
+
+    public static void Task7() {
+        Scanner kb = new Scanner(System.in);
+        System.out.print("Enter First String: ");
+        String firstString = kb.nextLine();
+        System.out.print("Enter Second String: ");
+        String secondString = kb.nextLine();
+        System.out.println(firstString.compareTo(secondString));
+    }
+
     public static void main(String[] args) {
         Task4();
     }
