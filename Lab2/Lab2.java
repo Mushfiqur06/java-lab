@@ -6,7 +6,7 @@ public class Lab2 {
 
         // Get a string from the user
         System.out.print("Enter a String ");
-        String str = kb.next();
+        String str = kb.nextLine();
         System.out.println(str);
     }
 
