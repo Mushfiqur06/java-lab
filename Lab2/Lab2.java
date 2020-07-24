@@ -31,7 +31,20 @@ public class Lab2 {
         }
     }
 
+    public static void Task4() {
+        Scanner kb = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String str = kb.nextLine();
+
+        for (char i = 'A'; i <= 'Z'; i++) {
+            char anotherCharStore = i;
+            long count = str.chars().filter(item -> item == anotherCharStore).count();
+            System.out.println((char) ('A' + i) + " which is " + ('A' + i) + " was found " + count + " Times");
+
+        }
+    }
+
     public static void main(String[] args) {
-        Task3();
+        Task4();
     }
 }
